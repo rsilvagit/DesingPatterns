@@ -16,6 +16,8 @@ namespace FactoryMethod.Vehicles
         public void StartRoute()
         {
             Console.WriteLine("Iniciando a rota");
+            GetCargo();
+
         }
     }
 }
