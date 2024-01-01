@@ -44,14 +44,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Aircrafts\Airplane.cs" />
+    <Compile Include="Aircrafts\Drone.cs" />
     <Compile Include="Aircrafts\Helicopter.cs" />
     <Compile Include="Aircrafts\IAircraft.cs" />
     <Compile Include="App\Application.cs" />
     <Compile Include="Factores\ITransportFactory.cs" />
+    <Compile Include="Factores\LimeTransport.cs" />
     <Compile Include="Factores\NineNineTransport.cs" />
     <Compile Include="Factores\UberTransport.cs" />
     <Compile Include="LandVehicles\Car.cs" />
     <Compile Include="LandVehicles\ILandVehicle.cs" />
+    <Compile Include="LandVehicles\Scooter.cs" />
     <Compile Include="LandVehicles\Motorcycle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

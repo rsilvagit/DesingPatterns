@@ -14,14 +14,18 @@ namespace AbstractFactory
         {
             Application app;
             ITransportFactory transportFactory;
-            string company = "99";
+            string company = "Lime";
 
             if(company == "Uber")
             {
                 transportFactory = new UberTransport();
-            }else
+            }else if(company == "99")
             {
                 transportFactory = new NineNineTransport();
+            }
+            else
+            {
+                transportFactory= new LimeTransport();
             }
 
             app = new Application(transportFactory);
