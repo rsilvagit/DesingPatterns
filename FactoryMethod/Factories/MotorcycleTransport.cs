@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FactoryMethod.Factories
 {
-    class MotorcycleTransport : ITransport
+    class MotorcycleTransport : Transport
     {
         protected override IVehicle CreateTransport()
         {

@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Factories\CarTransport.cs" />
-    <Compile Include="Factories\ITransport.cs" />
+    <Compile Include="Factories\Transport.cs" />
     <Compile Include="Factories\MotorcycleTransport.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

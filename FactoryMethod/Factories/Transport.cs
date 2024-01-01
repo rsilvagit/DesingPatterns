@@ -2,7 +2,7 @@
 
 namespace FactoryMethod.Factories
 {
-    abstract class ITransport
+    abstract class Transport
     {
         public void StartTransport()
         {
