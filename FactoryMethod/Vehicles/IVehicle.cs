@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace FactoryMethod.Vehicles
 {
-    internal interface IVehicle
+    interface IVehicle
     {
+        void GetCargo();
+        void StartRoute();
     }
 }

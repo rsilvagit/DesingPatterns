@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace FactoryMethod.Vehicles
 {
-    internal class car
+    class Car : IVehicle
     {
+        public void GetCargo()
+        {
+            Console.WriteLine("Pegamos os passageiros");
+        }
+
+        public void StartRoute()
+        {
+            GetCargo();
+            Console.WriteLine("Iniciando Rota");
+
+        }
     }
 }
