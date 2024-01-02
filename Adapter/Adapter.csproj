@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IPayonnerPayment.cs" />
     <Compile Include="IPayPalPayment.cs" />
     <Compile Include="PayPal.cs" />
     <Compile Include="Program.cs" />
