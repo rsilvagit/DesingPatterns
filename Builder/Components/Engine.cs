@@ -15,5 +15,9 @@ namespace Builder.Components
             get => power; 
             set => power = value;
         }
+        public Engine(int power) 
+        {
+            this.power = power;
+        }
     }
 }
