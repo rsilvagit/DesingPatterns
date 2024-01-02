@@ -2,7 +2,7 @@
 
 namespace Adapter
 {
-    class Payonner: IPayPalPayment
+    class Payonner: IPayPayonner
     {
 
         private Token token;

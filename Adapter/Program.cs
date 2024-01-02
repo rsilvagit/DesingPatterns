@@ -11,13 +11,13 @@ namespace Adapter
         static void Main(string[] args)
         {
             // PayPal payment = new PayPal();
-            Payonner payment = new Payonner();
+            //Payonner payment = new Payonner();
+            IPayPalPayment payment = new PayonnerAdapter(new Payonner());
+            payment.PayPalPayment();
+            payment.PayPalReceive();
 
-            //payment.PayPalPayment();
-            //payment.PayPalReceive();
-
-            payment.SendPayment();
-            payment.ReceivePayment();
+            //payment.SendPayment();
+            //payment.ReceivePayment();
 
             Console.ReadLine();
 
