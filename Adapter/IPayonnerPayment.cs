@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace Adapter
 {
-    internal interface IPayonnerPayment
+    interface IPayPayonner
     {
+        Token AuthToken();
+        void SendPayment();
+        void ReceivePayment();
     }
 }

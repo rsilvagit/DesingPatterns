@@ -46,6 +46,7 @@
     <Compile Include="IPayonnerPayment.cs" />
     <Compile Include="IPayPalPayment.cs" />
     <Compile Include="Payonner.cs" />
+    <Compile Include="PayonnerAdapter.cs" />
     <Compile Include="PayPal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
