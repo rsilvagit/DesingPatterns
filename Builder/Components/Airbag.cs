@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace Builder.Components
 {
-    enum VehicleType
+   enum Airbag
     {
-        SEDAN,
-        SPORTCAR,
-        TRUCK,
-        PICKUP,
-        SUV
+       DUPLO_FRONTAL,
+       LATERAL,
+       CORTINA,
+       NAO_POSSUI_AIRBAG
     }
 }

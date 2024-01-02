@@ -10,9 +10,10 @@ namespace Builder.Products
     class Vehicle
     {
         private VehicleType _vehicleType;
-        private int seats;
+        private int _seats;
         private Engine _engine;
         private Transmission _transmission;
+        private Airbag _airbag;
 
         public VehicleType VehicleType
         {
@@ -21,8 +22,8 @@ namespace Builder.Products
         }
         public int Seats
         {
-            get { return seats; }
-            set { seats = value; }
+            get { return _seats; }
+            set { _seats = value; }
         }
         public Engine Engine
         {
@@ -32,7 +33,12 @@ namespace Builder.Products
         public Transmission Transmission
         {
             get { return _transmission; }
-            set{ _transmission = value; }
+            set { _transmission = value; }
+        }
+        public Airbag Airbag
+        {
+            get { return _airbag; }
+            set { _airbag = value; }
         }
 
     }

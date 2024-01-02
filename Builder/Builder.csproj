@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Builders\IBuilder.cs" />
     <Compile Include="Builders\VehicleBuider.cs" />
+    <Compile Include="Components\Airbag.cs" />
     <Compile Include="Components\Engine.cs" />
     <Compile Include="Components\Transmission.cs" />
     <Compile Include="Components\VehicleType.cs" />
