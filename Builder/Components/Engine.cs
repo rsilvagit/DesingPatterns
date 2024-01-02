@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace Builder.Components
 {
-    internal class Engine
+     class Engine
     {
+        private int power;
+
+        public int Power
+        {
+            get => power; 
+            set => power = value;
+        }
     }
 }

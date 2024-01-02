@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Builder.Components
 {
-    internal class VehicleType
+    enum VehicleType
     {
+        SEDAN,
+        SPORTCAR,
+        TRUCK,
+        PICKUP
     }
 }

@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Builder.Components
 {
-    internal class Transmission
+   enum Transmission
     {
+        MT,
+        AT
     }
 }
