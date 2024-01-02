@@ -43,13 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IMercadoPago.cs" />
-    <Compile Include="IPayonnerPayment.cs" />
-    <Compile Include="IPayPalPayment.cs" />
-    <Compile Include="MercadoPago.cs" />
-    <Compile Include="Payonner.cs" />
-    <Compile Include="PayonnerAdapter.cs" />
-    <Compile Include="PayPal.cs" />
+    <Compile Include="Adapters\MercadoPagoAdapter.cs" />
+    <Compile Include="Interfaces\IMercadoPago.cs" />
+    <Compile Include="Interfaces\IPayonnerPayment.cs" />
+    <Compile Include="Interfaces\IPayPalPayment.cs" />
+    <Compile Include="Payments\MercadoPago.cs" />
+    <Compile Include="Payments\Payonner.cs" />
+    <Compile Include="Adapters\PayonnerAdapter.cs" />
+    <Compile Include="Payments\PayPal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Token.cs" />
