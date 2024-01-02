@@ -14,7 +14,7 @@ namespace Builder.Products
         private Engine _engine;
         private Transmission _transmission;
 
-        public VehicleType vehicleType
+        public VehicleType VehicleType
         {
             get { return _vehicleType; }
             set { _vehicleType = value; }

@@ -12,8 +12,9 @@ namespace Builder.Builders
     {
         void Reset();
         Vehicle GetVehicle();
-        void SetSeats();
-        void SetEngine();
+        void SetSeats( int sats);
+        void SetEngine(Engine engine);
+        void SetTransmission(Transmission transmission);
         void SetVehicleType(VehicleType vehicleType);
 
 
