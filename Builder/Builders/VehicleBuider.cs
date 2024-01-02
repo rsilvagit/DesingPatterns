@@ -10,29 +10,38 @@ namespace Builder.Builders
 {
     class VehicleBuider : IBuilder
     {
+        private Vehicle vehicle = new Vehicle();
+
         public Vehicle GetVehicle()
         {
-            throw new NotImplementedException();
+            Vehicle result = vehicle;
+            Reset();
+            return result;
         }
 
         public void Reset()
         {
-            throw new NotImplementedException();
+           vehicle = new Vehicle();
         }
 
-        public void SetEngine()
+        public void SetEngine(Engine engine)
         {
-            throw new NotImplementedException();
+            vehicle.Engine = engine;
         }
 
-        public void SetSeats()
+        public void SetSeats(int sats)
         {
-            throw new NotImplementedException();
+            vehicle.Seats = sats;
+        }
+
+        public void SetTransmission(Transmission transmission)
+        {
+            vehicle.Transmission = transmission;
         }
 
         public void SetVehicleType(VehicleType vehicleType)
         {
-            throw new NotImplementedException();
+            vehicle.VehicleType = vehicleType;
         }
     }
 }
