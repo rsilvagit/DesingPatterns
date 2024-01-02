@@ -21,6 +21,10 @@ namespace Builder
             Vehicle sedan = buider.GetVehicle();
 
             Console.WriteLine($"Criando Veiculo {sedan.VehicleType}");
+
+            director.ConstructTruck();
+            Vehicle truck = buider.GetVehicle();
+            Console.WriteLine($"Criando Veiculo {truck.VehicleType}");
             Console.ReadLine();
         }
     }
