@@ -6,7 +6,24 @@ using System.Threading.Tasks;
 
 namespace Adapter
 {
-    internal class PayPal
+    class PayPal : IPayPalPayment
     {
+        private Token token;
+        public Token AuthToken()
+        {
+            return new Token();
+        }
+
+        public void PayPalPayment()
+        {
+            token = AuthToken();
+            Console.WriteLine("Enviando pagamento via PayPal");
+            
+        }
+
+        public void PayPalReceive()
+        {
+            Console.WriteLine("Recebendo pagamento via PayPal");
+        }
     }
 }

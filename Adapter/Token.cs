@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace Adapter
 {
-    internal class Token
+    class Token
     {
+        private string token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSm9obiBEb2UiLCJpYXQiOjE1MTYyMzkwMjJ9.WFWhCZJ4PGNiY3O6f7wnNSiJjwL5xpDI_fQalIeEUfs";
+        public string GetToken()
+        {
+            return token;
+        }
     }
 }

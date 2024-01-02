@@ -6,10 +6,16 @@ using System.Threading.Tasks;
 
 namespace Adapter
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
+            PayPal payment = new PayPal();
+            payment.PayPalPayment();
+            payment.PayPalReceive();
+
+            Console.ReadLine();
+
         }
     }
 }
