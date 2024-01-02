@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Adapter.Adapters;
+using System;
+
 
 namespace Adapter
 {
@@ -12,7 +10,10 @@ namespace Adapter
         {
             // PayPal payment = new PayPal();
             //Payonner payment = new Payonner();
-            IPayPalPayment payment = new PayonnerAdapter(new Payonner());
+
+            //IPayPalPayment payment = new PayonnerAdapter(new Payonner());
+
+            IPayPalPayment payment = new MercadoPagoAdapter(new MercadoPago());
             payment.PayPalPayment();
             payment.PayPalReceive();
 

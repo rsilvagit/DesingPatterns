@@ -1,12 +1,30 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Adapter.Adapters
 {
-    internal class MercadoPagoAdapter
+    class MercadoPagoAdapter : IPayPalPayment
     {
+        private MercadoPago mercadoPago;
+
+        public MercadoPagoAdapter(MercadoPago mercadoPago)
+        {
+            this.mercadoPago = mercadoPago;
+            Console.WriteLine("Efetuando adaptação para transações via Mercado Pago");
+        }
+        public Token AuthToken()
+        {
+            return mercadoPago.AuthToken();
+        }
+
+        public void PayPalPayment()
+        {
+            this.mercadoPago.MercadoSendPayment();
+        }
+
+        public void PayPalReceive()
+        {
+            this.mercadoPago.MercadoReceivePayment();
+        }
     }
 }
