@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Platforms\Facebook.cs" />
     <Compile Include="Platforms\IPlatform.cs" />
+    <Compile Include="Platforms\TwitchTV.cs" />
     <Compile Include="Platforms\YouTube.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
