@@ -28,7 +28,7 @@ namespace Builder
 
             director.ConstructSuv();
             Vehicle suv = buider.GetVehicle();
-            Console.WriteLine($"Crindo veiculo {suv.VehicleType}");
+            Console.WriteLine($"Crindo Veiculo {suv.VehicleType}, Motor {suv.Engine.Power}, Airbags {suv.Airbag} ");
             Console.ReadLine();
         }
     }
