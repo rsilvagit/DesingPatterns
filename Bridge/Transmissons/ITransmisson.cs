@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bridge.Transmissions
+namespace Bridge.Transmissons
 {
-    internal interface ITransmisson
+    interface ITransmisson
     {
+        void Broadcasting();
+        void Result();
     }
 }

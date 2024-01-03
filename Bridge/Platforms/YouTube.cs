@@ -11,16 +11,19 @@ namespace Bridge.Platforms
         public YouTube() 
         {
             ConfigureRMTP();
+            Console.WriteLine("YouTube: Tranmissão iniciada");
         }
 
         public void AuthToken()
         {
-            Console.WriteLine("Autorizando a ");
+            Console.WriteLine("Youtube: Autorizando a aplicação ");
         }
 
-        public void ConfigureRMTR()
+        public void ConfigureRMTP()
         {
-            throw new NotImplementedException();
+           AuthToken();
+            Console.WriteLine("Youtube: configurando servidor RMTP.");
+
         }
     }
 }

@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bridge.Plataforms
+namespace Bridge.Platforms
 {
-    internal interface IPlataform
+   interface IPlatform
     {
+        void ConfigureRMTP();
+        void AuthToken();
     }
 }

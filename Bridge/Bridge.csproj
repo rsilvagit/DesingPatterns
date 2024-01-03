@@ -50,6 +50,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Transmissons\ITransmisson.cs" />
+    <Compile Include="Transmissons\Live.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
