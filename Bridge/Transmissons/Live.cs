@@ -16,7 +16,7 @@ namespace Bridge.Transmissons
         }
         public void Broadcasting()
         {
-            Console.WriteLine($"Iniciando a transdmissão na {platform}");
+            Console.WriteLine($"Iniciando a transmissão na {platform}");
         }
 
         public void Result()

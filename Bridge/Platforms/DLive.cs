@@ -6,23 +6,23 @@ using System.Threading.Tasks;
 
 namespace Bridge.Platforms
 {
-    class TwitchTV : IPlatform
+    class DLive:IPlatform
     {
-        public TwitchTV()
+        public DLive()
         {
             ConfigureRMTP();
-            Console.WriteLine("TwichTV: Transmissão iniciada");
+            Console.WriteLine("DLive: Transmissão iniciada");
         }
 
         public void AuthToken()
         {
-            Console.WriteLine("TwitchTV: Autorizando a aplicação ");
+            Console.WriteLine("DLive: Autorizando a aplicação ");
         }
 
         public void ConfigureRMTP()
         {
             AuthToken();
-            Console.WriteLine("TwitchTV: Configurando servidor RMTP.");
+            Console.WriteLine("DLive: Configurando servidor RMTP.");
 
         }
     }

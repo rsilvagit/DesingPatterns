@@ -22,7 +22,7 @@ namespace Bridge.Platforms
         public void ConfigureRMTP()
         {
             AuthToken();
-            Console.WriteLine("Facebook: configurando servidor RMTP.");
+            Console.WriteLine("Facebook: Configurando servidor RMTP.");
 
         }
     }

@@ -22,6 +22,10 @@ namespace Bridge.Transmissons
         {
             Console.WriteLine("Comentários liberados na live");
         }
+        public void Record() 
+        { 
+            Console.WriteLine("Gravação iniciada");
+        }
      
     }
 }

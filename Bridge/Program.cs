@@ -25,9 +25,10 @@ namespace Bridge
             AdvancedLive live = new AdvancedLive(platform);
 
             live.Broadcasting();
-            live.Result();
             live.Subtitle();
             live.Comments();
+            live.Record();
+            live.Result();
         }
         static void Main(string[] args)
         {
@@ -38,6 +39,9 @@ namespace Bridge
             Console.ReadLine();
 
             StartLive(new TwitchTV());
+            Console.ReadLine();
+
+            StartLiveAdvanced(new DLive());
             Console.ReadLine();
         }
     }
