@@ -17,13 +17,24 @@ namespace Bridge
 
             live.Broadcasting();
             live.Result();
+           
+        }
+        static void StartLiveAdvanced(IPlatform platform)
+        {
+            Console.WriteLine("...Aguarde...");
+            AdvancedLive live = new AdvancedLive(platform);
+
+            live.Broadcasting();
+            live.Result();
+            live.Subtitle();
+            live.Comments();
         }
         static void Main(string[] args)
         {
             StartLive(new YouTube());
             Console.ReadLine();
 
-            StartLive(new Facebook());
+            StartLiveAdvanced(new Facebook());
             Console.ReadLine();
 
             StartLive(new TwitchTV());
