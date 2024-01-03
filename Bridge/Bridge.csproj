@@ -49,6 +49,7 @@
     <Compile Include="Platforms\YouTube.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transmissons\AdvancedLive.cs" />
     <Compile Include="Transmissons\ITransmisson.cs" />
     <Compile Include="Transmissons\Live.cs" />
   </ItemGroup>
